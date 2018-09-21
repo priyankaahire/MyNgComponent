@@ -1,0 +1,7 @@
+<div [ngClass]="{'my-input-disabled':isDisabled == true}">
+  <div class="my-input-container">
+      <label  *ngIf="label">{{label}}</label><span *ngIf="isOptional" class="option-class">-Optional</span>
+      <input [ngClass]="{'my-input-disabled':isDisabled == true}" class="my-input" [placeholder]="placeholder" [style.text-align]="align" [style.width.px]="width" [type]="type" [(ngModel)]="value" [readonly]="(readonly ? 'readonly':null)">
+  </div>
+</div>
+  
